@@ -19,7 +19,7 @@
  function addTask(e){
      if(taskInput.value === '' ){
          alert('Error Adding a task');
-     }
+     }else{
      const li = document.createElement('li');
      li.className = 'collection-item';
      li.appendChild(document.createTextNode(taskInput.value));  
@@ -37,6 +37,7 @@
 
 
     e.preventDefault();
+     }
  } 
 
  function removeTask(e){
