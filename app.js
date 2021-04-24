@@ -7,6 +7,7 @@
  loadEventListeners();
 
  function loadEventListeners(){
+     
      form.addEventListener('submit',addTask);
 
      taskList.addEventListener('click',removeTask); 
@@ -17,6 +18,7 @@
  } 
 
  function addTask(e){
+    
      if(taskInput.value === '' ){
          alert('Error Adding a task');
      }else{
